@@ -494,6 +494,11 @@ header nav .nav-links a {
 .contact-form .form-group textarea {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .contact-form .form-group textarea {
+    font-size: 1rem;
+  }
+}
 .contact-form .form-group .package-label {
   display: flex;
   flex-wrap: wrap;
@@ -519,6 +524,11 @@ header nav .nav-links a {
 @media (max-width: 500px) {
   .contact-form div input {
     width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-form div input {
+    font-size: 1.7rem;
   }
 }
 .contact-form div input::placeholder {
@@ -574,6 +584,7 @@ header nav .nav-links a {
 @media (max-width: 500px) {
   .contact-form select {
     margin: 0 3rem;
+    font-size: 1.5;
   }
 }
 .footer {
