@@ -1,1 +1,60 @@
 // Navigation Styles here
+
+/*Navigation section*/
+
+header nav {    
+    
+	.custom-layout(space-between, center);
+     margin: 2% 0;
+     margin-left: 9%;
+    
+     
+     
+	 @media @mobile{
+             .custom-layout(center, center);  
+             flex-direction: column;          
+	  		margin: 2% 0;
+	  }//this closes @media @mobile inside of the header nav
+
+
+	.logo {
+		width: 30%;
+        // padding-left: 2%;
+        h1{
+            font-size: 5rem;
+            @media @mobile{
+                font-size: 3rem; 
+            }
+        }
+
+		@media @mobile {
+            width: 30%;
+            margin: 2% 0;
+		}//this closes @media @mobile inside of the logo
+
+	}//this closes .logo
+
+	.nav-links {
+		.custom-layout(flex-end, center);
+				width: 70%;
+
+				@media @mobile {
+					.custom-layout(space-around, center);
+							width: 100%;
+				}//this closes @media @mobile inside of the nav-links
+
+
+		 a {
+			width: 20%;
+			.custom-a(#292929, 1.8rem, none);
+			// font-weight: bold;
+			text-align: center;
+
+			// &:hover {
+			// 	.button-hover();
+			// }//this closes a:hover
+		}//this closes a
+	}//this closes .nav-links
+}//this closes header nav
+
+/*End  of navigation*/

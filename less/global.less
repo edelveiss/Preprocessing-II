@@ -1,17 +1,30 @@
 * {
   box-sizing: border-box;
+  // -------------
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
+
+  //-------------------
+  display: flex;
+  justify-content: center;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
@@ -39,8 +52,86 @@ img {
   height: auto;
 }
 
-.container {
+.scroller {
+  margin: 0 auto;
+  width: 980px;
+  // max-width: 980px;
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid @silver;
+
+  @media @mobile {
+    width: 500px;
+    max-width: 500px;
+    border: hidden;
+    border: 1px solid @silver;
+    width: 100%;
+  }
+}
+
+.bodyWrapper {
+  max-width: 1010px;
+   width: 1010px;
+  margin: 0 auto;
+
+  @media @mobile {
+    width: 500px;
+    max-width: 500px;
+  }
+}
+
+header {
+  border-bottom: 2px dashed @navigation-border;
+  width: 980px;
+  margin: 0 auto;
+  @media @mobile {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.container,
+.bus-showcase,
+header nav {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @mobile {
+    width: 450px;
+  }
+}
+
+.contact-middle{
+  max-width: 800px;
+width: 100%;
+margin: 0 auto;
+}
+
+.contact-form{
+  max-width: 800px;
+width: 100%;
+margin: 0 auto;
+}
+
+
+//  .bodyWrapper{
+// 	width: 100%;
+//   margin: 0 auto;
+//   border: 1px solid red;
+
+//  }
+// .header {
+//   max-width: 800px;
+//   width: 100%;
+//   margin: 0 auto;
+// }
+footer {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  @media @mobile {
+    max-width: 500px;
+    width: 100%;
+  }
 }
